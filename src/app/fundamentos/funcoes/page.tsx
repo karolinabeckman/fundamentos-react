@@ -1,3 +1,5 @@
+import Pagina from "@/components/Pagina";
+
 export default function Page() {
 	function renderizarTitulo() {
 		return (
@@ -18,10 +20,12 @@ export default function Page() {
 		);
 	}
 	return (
-		<div>
-			{renderizarTitulo()}
-			<hr />
-			{renderizarConteudo()}
-		</div>
+		<Pagina titulo="JSX: Chamando Funções" subtitulo="Funções">
+			<div>
+				{renderizarTitulo()}
+				<hr />
+				{renderizarConteudo()}
+			</div>
+		</Pagina>
 	);
 }
